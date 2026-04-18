@@ -264,17 +264,28 @@
           <div
             class="bg-white rounded-3xl dark:bg-forest-800 dark:border-0 border border-green-100 shadow-xl p-8 md:p-12"
           >
-            <p
-              class="dark:text-forest-400 text-forest-600 text-xs tracking-widest uppercase font-semibold mb-2"
-            >
-              Send a message
-            </p>
-            <h2
-              class="dark:text-white font-display font-bold text-3xl text-forest-900 mb-8"
-            >
-              Plan Your Dream Trip
-            </h2>
-
+            <div class="flex justify-between items-center">
+              <div class="flex flex-col">
+                <p
+                  class="dark:text-forest-400 text-forest-600 text-xs tracking-widest uppercase font-semibold mb-2"
+                >
+                  Send a message
+                </p>
+                <h2
+                  class="dark:text-white font-display font-bold text-3xl text-forest-900 mb-8"
+                >
+                  Plan Your Dream Trip
+                </h2>
+              </div>
+              <div class="flex justify-center rounded-4xl">
+                <dotlottie-wc
+                  src="https://lottie.host/28593a4b-fcb1-425c-acfc-b0f0e7aebadb/XN6PZ82HkK.lottie"
+                  style="width: 250px; height: 250px"
+                  autoplay
+                  loop
+                ></dotlottie-wc>
+              </div>
+            </div>
             <form class="space-y-5">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div class="space-y-2">
@@ -349,6 +360,7 @@
         </div>
       </div>
     </section>
+
     <section class="px-4 pb-24 bg-white dark:bg-forest-950 pt-5">
       <div class="max-w-7xl mx-auto">
         <div
@@ -601,5 +613,9 @@
   <script
     src="https://kit.fontawesome.com/d9a2442d2e.js"
     crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.10/dist/dotlottie-wc.js"
+    type="module"
   ></script>
 </html>
