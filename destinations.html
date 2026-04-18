@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations – Domner BaiTorng</title>
+    <link rel="stylesheet" href="src/output.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="font-body bg-white dark:bg-forest-950 text-gray-800 dark:text-forest-100 transition-colors duration-300"
+  >
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-forest-950/90 backdrop-blur-md border-b border-green-100 dark:border-forest-800 shadow-sm"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center gap-2">
+            <div
+              class="w-8 h-8 bg-forest-700 rounded-full flex items-center justify-center"
+            >
+              <i class="fas fa-location-dot text-white text-xs"></i>
+            </div>
+            <span
+              class="font-display text-[1.2rem] sm:text-[1.35rem] font-bold text-forest-800 dark:text-forest-50 tracking-tight"
+            >
+              Domner BaiTorng
+            </span>
+          </a>
+
+          <div class="hidden md:flex items-center gap-6 lg:gap-8">
+            <a
+              href="index.html"
+              class="relative text-sm font-medium text-gray-600 dark:text-forest-300 hover:text-forest-700 dark:hover:text-white transition-all"
+              >Home</a
+            >
+            <a
+              href="destinations.html"
+              class="relative text-sm font-medium text-forest-700 dark:text-green-400 after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[2px] after:bg-forest-600"
+              >Destinations</a
+            >
+            <a
+              href="packages.html"
+              class="relative text-sm font-medium text-gray-600 dark:text-forest-300 hover:text-forest-700 dark:hover:text-white transition-all"
+              >Packages</a
+            >
+            <a
+              href="about.html"
+              class="relative text-sm font-medium text-gray-600 dark:text-forest-300 hover:text-forest-700 dark:hover:text-white transition-all"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="relative text-sm font-medium text-gray-600 dark:text-forest-300 hover:text-forest-700 dark:hover:text-white transition-all"
+              >Contact</a
+            >
+            <a
+              href="packages.html"
+              class="bg-forest-600 text-white text-sm font-medium px-5 py-2 rounded-full shadow transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(22,163,74,0.4)]"
+              >Book Now</a
+            >
+          </div>
+
+          <label
+            for="menu-toggle"
+            class="md:hidden flex flex-col gap-1.5 cursor-pointer p-2 group"
+          >
+            <input type="checkbox" id="menu-toggle" class="hidden peer" />
+            <div
+              class="w-6 h-0.5 bg-forest-700 dark:bg-forest-300 transition-all peer-checked:rotate-45 peer-checked:translate-y-2"
+            ></div>
+            <div
+              class="w-6 h-0.5 bg-forest-700 dark:bg-forest-300 transition-all peer-checked:opacity-0"
+            ></div>
+            <div
+              class="w-6 h-0.5 bg-forest-700 dark:bg-forest-300 transition-all peer-checked:-rotate-45 peer-checked:-translate-y-2"
+            ></div>
+
+            <div
+              class="absolute top-16 left-0 right-0 hidden peer-checked:block bg-white dark:bg-forest-900 border-b border-green-100 dark:border-forest-800 shadow-xl animate-in slide-in-from-top duration-300"
+            >
+              <div class="flex flex-col p-4 gap-2">
+                <a
+                  href="index.html"
+                  class="px-4 py-3 text-forest-700 dark:text-green-400 font-semibold bg-forest-50 dark:bg-forest-800 rounded-xl"
+                  >Home</a
+                >
+                <a
+                  href="destinations.html"
+                  class="px-4 py-3 text-gray-600 dark:text-forest-300 hover:bg-gray-50 dark:hover:bg-forest-800 rounded-xl"
+                  >Destinations</a
+                >
+                <a
+                  href="packages.html"
+                  class="px-4 py-3 text-gray-600 dark:text-forest-300 hover:bg-gray-50 dark:hover:bg-forest-800 rounded-xl"
+                  >Packages</a
+                >
+                <a
+                  href="about.html"
+                  class="px-4 py-3 text-gray-600 dark:text-forest-300 hover:bg-gray-50 dark:hover:bg-forest-800 rounded-xl"
+                  >About</a
+                >
+                <a
+                  href="contact.html"
+                  class="px-4 py-3 text-gray-600 dark:text-forest-300 hover:bg-gray-50 dark:hover:bg-forest-800 rounded-xl"
+                  >Contact</a
+                >
+                <hr class="my-2 border-gray-100 dark:border-forest-800" />
+                <a
+                  href="packages.html"
+                  class="w-full bg-forest-600 text-white text-center font-bold py-4 rounded-2xl shadow-lg"
+                  >Book Your Trip</a
+                >
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="relative flex pb-14 pt-28 px-4 bg-[url('/img/photo-1469474968028-56623f02e42e.jpg')] bg-cover bg-center"
+    >
+      <div class="absolute inset-0 bg-forest-950/40"></div>
+      <div class="relative z-10 max-w-7xl mx-auto w-full">
+        <p class="text-green-300 text-xs uppercase font-semibold mb-2">
+          Explore the curated
+        </p>
+        <h1 class="text-5xl md:text-7xl text-white font-display font-bold">
+          Our Destinations
+        </h1>
+      </div>
+    </section>
+
+    <section
+      class="bg-white dark:bg-forest-900 border-b border-forest-100 dark:border-forest-800 sticky top-16 z-40 shadow-sm transition-colors"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap items-center gap-3"
+      >
+        <span
+          class="text-[10px] text-gray-400 dark:text-forest-500 uppercase tracking-widest font-bold mr-2 hidden sm:block"
+          >Filter:</span
+        >
+        <button
+          class="bg-forest-800 dark:bg-forest-600 text-white text-xs font-bold px-5 py-2 rounded-full"
+        >
+          All
+        </button>
+        <button
+          class="border border-gray-200 dark:border-forest-700 text-gray-500 dark:text-forest-200 hover:border-forest-600 text-xs font-bold px-5 py-2 rounded-full transition-all"
+        >
+          Phnom Penh
+        </button>
+        <button
+          class="border border-gray-200 dark:border-forest-700 text-gray-500 dark:text-forest-200 hover:border-forest-600 text-xs font-bold px-5 py-2 rounded-full transition-all"
+        >
+          Ratanak Kiri
+        </button>
+        <button
+          class="border border-gray-200 dark:border-forest-700 text-gray-500 dark:text-forest-200 hover:border-forest-600 text-xs font-bold px-5 py-2 rounded-full transition-all"
+        >
+          Siem Reap
+        </button>
+        <button
+          class="border border-gray-200 dark:border-forest-700 text-gray-500 dark:text-forest-200 hover:border-forest-600 text-xs font-bold px-5 py-2 rounded-full transition-all"
+        >
+          Kampot
+        </button>
+        <div
+          class="h-4 w-px bg-gray-200 dark:bg-forest-800 mx-1 hidden md:block"
+        ></div>
+        <button
+          class="text-gray-500 dark:text-forest-200 hover:text-forest-700 dark:hover:text-green-400 text-xs font-bold px-2 py-2 flex items-center gap-2"
+        >
+          <i class="fa-solid fa-umbrella-beach"></i> Beach
+        </button>
+        <button
+          class="text-gray-500 dark:text-forest-200 hover:text-forest-700 dark:hover:text-green-400 text-xs font-bold px-2 py-2 flex items-center gap-2"
+        >
+          <i class="fa-solid fa-mountain-sun"></i> Mountains
+        </button>
+        <button
+          class="text-gray-500 dark:text-forest-200 hover:text-forest-700 dark:hover:text-green-400 text-xs font-bold px-2 py-2 flex items-center gap-2"
+        >
+          <i class="fa-solid fa-building-columns"></i> Temples
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="py-20 px-4 bg-forest-50/50 dark:bg-forest-950/50 transition-colors"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div
+            class="cursor-pointer group bg-white dark:bg-forest-900 rounded-[2rem] overflow-hidden shadow-sm border border-forest-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-forest-900/10 dark:hover:shadow-black/40 hover:-translate-y-2 transition-all duration-500"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="/img/trekking-mondulkiri1-1-1000x688.jpg"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                alt="Mondulkiri"
+              />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span
+                  class="bg-white/95 dark:bg-forest-800/95 backdrop-blur text-forest-800 dark:text-forest-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+                  >Nature</span
+                >
+                <span
+                  class="bg-forest-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+                  >Eco Tour</span
+                >
+              </div>
+            </div>
+            <div class="p-7">
+              <div class="flex gap-1 text-orange-400 text-[10px] mb-3">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <span
+                  class="text-gray-400 dark:text-shadow-forest-500 ml-1 font-medium"
+                  >(210)</span
+                >
+              </div>
+              <h3
+                class="font-display font-bold text-2xl text-forest-950 dark:text-slate-100 mb-2"
+              >
+                Mondulkiri Jungle
+              </h3>
+              <p
+                class="text-gray-500 dark:text-forest-200 text-sm leading-relaxed mb-6"
+              >
+                Waterfalls, elephant sanctuaries, and deep jungle adventures.
+              </p>
+              <div
+                class="flex items-center justify-between pt-5 border-t border-gray-50 dark:border-slate-800"
+              >
+                <div>
+                  <p
+                    class="text-[10px] uppercase text-gray-400 dark:text-white dark:text-shadow-forest-500 font-bold tracking-widest"
+                  >
+                    Starting at
+                  </p>
+                  <p
+                    class="text-forest-700 dark:text-forest-400 font-bold text-lg"
+                  >
+                    $199<span
+                      class="text-xs font-normal text-gray-400 dark:text-white dark:text-shadow-forest-500"
+                      >/pp</span
+                    >
+                  </p>
+                </div>
+                <div class="text-right">
+                  <p
+                    class="text-xs text-gray-500 dark:text-forest-200 flex items-center justify-end gap-1.5 font-medium"
+                  >
+                    <i class="fa-regular fa-clock text-forest-500"></i> 3–5 Days
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cursor-pointer group bg-white dark:bg-forest-900 rounded-[2rem] overflow-hidden shadow-sm border border-forest-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-forest-900/10 dark:hover:shadow-black/40 hover:-translate-y-2 transition-all duration-500"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="/img/kohrong.jpg"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                alt="Koh Rong Samloem"
+              />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span
+                  class="bg-white/95 dark:bg-forest-800/95 backdrop-blur text-forest-800 dark:text-forest-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+                  >Island</span
+                >
+                <span
+                  class="bg-forest-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+                  >Relax</span
+                >
+              </div>
+            </div>
+            <div class="p-7">
+              <div class="flex gap-1 text-orange-400 text-[10px] mb-3">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <span
+                  class="text-gray-400 dark:text-shadow-forest-500 ml-1 font-medium"
+                  >(180)</span
+                >
+              </div>
+              <h3
+                class="font-display font-bold text-2xl text-forest-950 dark:text-slate-100 mb-2"
+              >
+                Koh Rong Samloem
+              </h3>
+              <p
+                class="text-gray-500 dark:text-forest-200 text-sm leading-relaxed mb-6"
+              >
+                Peaceful beaches, turquoise water, and quiet island life.
+              </p>
+              <div
+                class="flex items-center justify-between pt-5 border-t border-gray-50 dark:border-slate-800"
+              >
+                <div>
+                  <p
+                    class="text-[10px] uppercase text-gray-400 dark:text-white dark:text-shadow-forest-500 font-bold tracking-widest"
+                  >
+                    Starting at
+                  </p>
+                  <p
+                    class="text-forest-700 dark:text-forest-400 font-bold text-lg"
+                  >
+                    $149<span
+                      class="text-xs font-normal text-gray-400 dark:text-white dark:text-shadow-forest-500"
+                      >/pp</span
+                    >
+                  </p>
+                </div>
+                <div class="text-right">
+                  <p
+                    class="text-xs text-gray-500 dark:text-forest-200 flex items-center justify-end gap-1.5 font-medium"
+                  >
+                    <i class="fa-regular fa-clock text-forest-500"></i> 2–4 Days
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cursor-pointer group bg-white dark:bg-forest-900 rounded-[2rem] overflow-hidden shadow-sm border border-forest-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-forest-900/10 dark:hover:shadow-black/40 hover:-translate-y-2 transition-all duration-500"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="./img/Cardamom-Mountains-scaled.jpg"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                alt="Cardamom Mountains"
+              />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span
+                  class="bg-white/95 dark:bg-forest-800/95 backdrop-blur text-forest-800 dark:text-forest-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+                  >Mountain</span
+                >
+                <span
+                  class="bg-forest-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+                  >Adventure</span
+                >
+              </div>
+            </div>
+            <div class="p-7">
+              <div class="flex gap-1 text-orange-400 text-[10px] mb-3">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star-half-stroke"></i>
+                <span
+                  class="text-gray-400 dark:text-shadow-forest-500 ml-1 font-medium"
+                  >(95)</span
+                >
+              </div>
+              <h3
+                class="font-display font-bold text-2xl text-forest-950 dark:text-slate-100 mb-2"
+              >
+                Cardamom Mountains
+              </h3>
+              <p
+                class="text-gray-500 dark:text-forest-200 text-sm leading-relaxed mb-6"
+              >
+                Untouched rainforest, rivers, and true wilderness experience.
+              </p>
+              <div
+                class="flex items-center justify-between pt-5 border-t border-gray-50 dark:border-slate-800"
+              >
+                <div>
+                  <p
+                    class="text-[10px] uppercase text-gray-400 dark:text-white dark:text-shadow-forest-500 font-bold tracking-widest"
+                  >
+                    Starting at
+                  </p>
+                  <p
+                    class="text-forest-700 dark:text-forest-400 font-bold text-lg"
+                  >
+                    $179<span
+                      class="text-xs font-normal text-gray-400 dark:text-white dark:text-shadow-forest-500"
+                      >/pp</span
+                    >
+                  </p>
+                </div>
+                <div class="text-right">
+                  <p
+                    class="text-xs text-gray-500 dark:text-forest-200 flex items-center justify-end gap-1.5 font-medium"
+                  >
+                    <i class="fa-regular fa-clock text-forest-500"></i> 3–6 Days
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cursor-pointer group bg-white dark:bg-forest-900 rounded-[2rem] overflow-hidden shadow-sm border border-forest-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-forest-900/10 dark:hover:shadow-black/40 hover:-translate-y-2 transition-all duration-500"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="/img/aerial-view-royal-palace-of-phnom-penh-cambodia-1920x1080.webp"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span
+                  class="bg-white/95 dark:bg-forest-800/95 backdrop-blur text-forest-800 dark:text-forest-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+                  >City</span
+                >
+              </div>
+            </div>
+            <div class="p-7">
+              <div class="flex gap-1 text-orange-400 text-[10px] mb-3">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <span
+                  class="text-gray-400 dark:text-shadow-forest-500 ml-1 font-medium"
+                  >(340)</span
+                >
+              </div>
+              <h3
+                class="font-display font-bold text-2xl text-forest-950 dark:text-slate-100 mb-2"
+              >
+                Phnom Penh
+              </h3>
+              <p
+                class="text-gray-500 dark:text-forest-200 text-sm leading-relaxed mb-6"
+              >
+                Royal Palace, riverside views, and vibrant nightlife.
+              </p>
+              <div
+                class="flex items-center justify-between pt-5 border-t border-gray-50 dark:border-slate-800"
+              >
+                <div>
+                  <p
+                    class="text-[10px] uppercase text-gray-400 dark:text-white dark:text-shadow-forest-500 font-bold tracking-widest"
+                  >
+                    Starting at
+                  </p>
+                  <p
+                    class="text-forest-700 dark:text-forest-400 font-bold text-lg"
+                  >
+                    $99<span
+                      class="text-xs font-normal text-gray-400 dark:text-white dark:text-shadow-forest-500"
+                      >/pp</span
+                    >
+                  </p>
+                </div>
+                <div class="text-right">
+                  <p
+                    class="text-xs text-gray-500 dark:text-forest-200 flex items-center justify-end gap-1.5 font-medium"
+                  >
+                    <i class="fa-regular fa-clock text-forest-500"></i> 2 Days
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cursor-pointer group bg-white dark:bg-forest-900 rounded-[2rem] overflow-hidden shadow-sm border border-forest-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-forest-900/10 dark:hover:shadow-black/40 hover:-translate-y-2 transition-all duration-500"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="/img/paul-szewczyk-gt3gK_Wob2g-unsplash.jpg"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span
+                  class="bg-white/95 dark:bg-forest-800/95 backdrop-blur text-forest-800 dark:text-forest-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+                  >Culture</span
+                >
+              </div>
+            </div>
+            <div class="p-7">
+              <div class="flex gap-1 text-orange-400 text-[10px] mb-3">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <span class="text-gray-400 dark:text-slate-500 ml-1 font-medium"
+                  >(1.2k)</span
+                >
+              </div>
+              <h3
+                class="font-display font-bold text-2xl text-forest-950 dark:text-slate-100 mb-2"
+              >
+                Siem Reap
+              </h3>
+              <p
+                class="text-gray-500 dark:text-forest-200 text-sm leading-relaxed mb-6"
+              >
+                Home of Angkor Wat and ancient Khmer temples.
+              </p>
+              <div
+                class="flex items-center justify-between pt-5 border-t border-gray-50 dark:border-slate-800"
+              >
+                <div>
+                  <p
+                    class="text-[10px] uppercase text-gray-400 dark:text-white dark:text-slate-500 font-bold tracking-widest"
+                  >
+                    Starting at
+                  </p>
+                  <p
+                    class="text-forest-700 dark:text-forest-400 font-bold text-lg"
+                  >
+                    $129<span
+                      class="text-xs font-normal text-gray-400 dark:text-white dark:text-slate-500"
+                      >/pp</span
+                    >
+                  </p>
+                </div>
+                <div class="text-right">
+                  <p
+                    class="text-xs text-gray-500 dark:text-forest-200 flex items-center justify-end gap-1.5 font-medium"
+                  >
+                    <i class="fa-regular fa-clock text-forest-500"></i> 3 Days
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cursor-pointer group bg-white dark:bg-forest-900 rounded-[2rem] overflow-hidden shadow-sm border border-forest-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-forest-900/10 dark:hover:shadow-black/40 hover:-translate-y-2 transition-all duration-500"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="img/battambang-61.jpg"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span
+                  class="bg-white/95 dark:bg-forest-800/95 backdrop-blur text-forest-800 dark:text-forest-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+                  >Countryside</span
+                >
+              </div>
+            </div>
+            <div class="p-7">
+              <div class="flex gap-1 text-orange-400 text-[10px] mb-3">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star-half-stroke"></i>
+                <span class="text-gray-400 dark:text-slate-500 ml-1 font-medium"
+                  >(115)</span
+                >
+              </div>
+              <h3
+                class="font-display font-bold text-2xl text-forest-950 dark:text-slate-100 mb-2"
+              >
+                Battambang
+              </h3>
+              <p
+                class="text-gray-500 dark:text-forest-200 text-sm leading-relaxed mb-6"
+              >
+                Peaceful rice fields, bamboo train, and local culture.
+              </p>
+              <div
+                class="flex items-center justify-between pt-5 border-t border-gray-50 dark:border-slate-800"
+              >
+                <div>
+                  <p
+                    class="text-[10px] uppercase text-gray-400 dark:text-white dark:text-slate-500 font-bold tracking-widest"
+                  >
+                    Starting at
+                  </p>
+                  <p
+                    class="text-forest-700 dark:text-forest-400 font-bold text-lg"
+                  >
+                    $89<span
+                      class="text-xs font-normal text-gray-400 dark:text-white dark:text-slate-500"
+                      >/pp</span
+                    >
+                  </p>
+                </div>
+                <div class="text-right">
+                  <p
+                    class="text-xs text-gray-500 dark:text-forest-200 flex items-center justify-end gap-1.5 font-medium"
+                  >
+                    <i class="fa-regular fa-clock text-forest-500"></i> 2 Days
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cursor-pointer group bg-white dark:bg-forest-900 rounded-[2rem] overflow-hidden shadow-sm border border-forest-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-forest-900/10 dark:hover:shadow-black/40 hover:-translate-y-2 transition-all duration-500"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="img/Main-attraction-of-Ratanak-Kiri.webp"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span
+                  class="bg-white/95 dark:bg-forest-800/95 backdrop-blur text-forest-800 dark:text-forest-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+                  >Nature</span
+                >
+              </div>
+            </div>
+            <div class="p-7">
+              <div class="flex gap-1 text-orange-400 text-[10px] mb-3">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <span class="text-gray-400 dark:text-slate-500 ml-1 font-medium"
+                  >(142)</span
+                >
+              </div>
+              <h3
+                class="font-display font-bold text-2xl text-forest-950 dark:text-slate-100 mb-2"
+              >
+                Ratanakiri
+              </h3>
+              <p
+                class="text-gray-500 dark:text-forest-200 text-sm leading-relaxed mb-6"
+              >
+                Volcanic lakes, waterfalls, and wild jungle.
+              </p>
+              <div
+                class="flex items-center justify-between pt-5 border-t border-gray-50 dark:border-slate-800"
+              >
+                <div>
+                  <p
+                    class="text-[10px] uppercase text-gray-400 dark:text-white dark:text-slate-500 font-bold tracking-widest"
+                  >
+                    Starting at
+                  </p>
+                  <p
+                    class="text-forest-700 dark:text-forest-400 font-bold text-lg"
+                  >
+                    $159<span
+                      class="text-xs font-normal text-gray-400 dark:text-white dark:text-slate-500"
+                      >/pp</span
+                    >
+                  </p>
+                </div>
+                <div class="text-right">
+                  <p
+                    class="text-xs text-gray-500 dark:text-forest-200 flex items-center justify-end gap-1.5 font-medium"
+                  >
+                    <i class="fa-regular fa-clock text-forest-500"></i> 3–5 Days
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cursor-pointer group bg-white dark:bg-forest-900 rounded-[2rem] overflow-hidden shadow-sm border border-forest-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-forest-900/10 dark:hover:shadow-black/40 hover:-translate-y-2 transition-all duration-500"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="img/preahviheartemple.jpg"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span
+                  class="bg-white/95 dark:bg-forest-800/95 backdrop-blur text-forest-800 dark:text-forest-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+                  >Mountain</span
+                >
+              </div>
+            </div>
+            <div class="p-7">
+              <div class="flex gap-1 text-orange-400 text-[10px] mb-3">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <span
+                  class="text-gray-400 dark:text-shadow-forest-500 ml-1 font-medium"
+                  >(88)</span
+                >
+              </div>
+              <h3
+                class="font-display font-bold text-2xl text-forest-950 dark:text-slate-100 mb-2"
+              >
+                Preah Vihear
+              </h3>
+              <p
+                class="text-gray-500 dark:text-forest-200 text-sm leading-relaxed mb-6"
+              >
+                Cliff-top temple with breathtaking mountain views.
+              </p>
+              <div
+                class="flex items-center justify-between pt-5 border-t border-gray-50 dark:border-slate-800"
+              >
+                <div>
+                  <p
+                    class="text-[10px] uppercase text-gray-400 dark:text-white dark:text-shadow-forest-500 font-bold tracking-widest"
+                  >
+                    Starting at
+                  </p>
+                  <p
+                    class="text-forest-700 dark:text-forest-400 font-bold text-lg"
+                  >
+                    $119<span
+                      class="text-xs font-normal text-gray-400 dark:text-white dark:text-shadow-forest-500"
+                      >/pp</span
+                    >
+                  </p>
+                </div>
+                <div class="text-right">
+                  <p
+                    class="text-xs text-gray-500 dark:text-forest-200 flex items-center justify-end gap-1.5 font-medium"
+                  >
+                    <i class="fa-regular fa-clock text-forest-500"></i> 2–3 Days
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cursor-pointer group bg-white dark:bg-forest-900 rounded-[2rem] overflow-hidden shadow-sm border border-forest-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-forest-900/10 dark:hover:shadow-black/40 hover:-translate-y-2 transition-all duration-500"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src="img/Tboung-Khmum-Travel-Attractions.png"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span
+                  class="bg-white/95 dark:bg-forest-800/95 backdrop-blur text-forest-800 dark:text-forest-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter"
+                  >Rural</span
+                >
+              </div>
+            </div>
+            <div class="p-7">
+              <div class="flex gap-1 text-orange-400 text-[10px] mb-3">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star-half-stroke"></i>
+                <span
+                  class="text-gray-400 dark:text-shadow-forest-500 ml-1 font-medium"
+                  >(45)</span
+                >
+              </div>
+              <h3
+                class="font-display font-bold text-2xl text-forest-950 dark:text-slate-100 mb-2"
+              >
+                Tbong Khmum
+              </h3>
+              <p
+                class="text-gray-500 dark:text-forest-200 text-sm leading-relaxed mb-6"
+              >
+                Quiet countryside, farms, and authentic local life.
+              </p>
+              <div
+                class="flex items-center justify-between pt-5 border-t border-gray-50 dark:border-slate-800"
+              >
+                <div>
+                  <p
+                    class="text-[10px] uppercase text-gray-400 dark:text-white dark:text-shadow-forest-500 font-bold tracking-widest"
+                  >
+                    Starting at
+                  </p>
+                  <p
+                    class="text-forest-700 dark:text-forest-400 font-bold text-lg"
+                  >
+                    $79<span
+                      class="text-xs font-normal text-gray-400 dark:text-white dark:text-shadow-forest-500"
+                      >/pp</span
+                    >
+                  </p>
+                </div>
+                <div class="text-right">
+                  <p
+                    class="text-xs text-gray-500 dark:text-forest-200 flex items-center justify-end gap-1.5 font-medium"
+                  >
+                    <i class="fa-regular fa-clock text-forest-500"></i> 1–2 Days
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-forest-900 dark:bg-forest-950 py-20 px-4 text-center border-t border-forest-800 transition-colors"
+    >
+      <div class="max-w-2xl mx-auto">
+        <h2 class="font-display text-4xl md:text-5xl text-white font-bold mb-6">
+          Tailor-made Journeys
+        </h2>
+        <p class="text-forest-200/80 mb-10 leading-relaxed font-light">
+          Can't find exactly what you're looking for? Our travel architects
+          specialize in crafting bespoke itineraries.
+        </p>
+        <a
+          href="#"
+          class="inline-flex items-center gap-3 bg-white text-forest-900 font-bold px-10 py-4 rounded-full shadow-xl hover:bg-forest-50 transition-all hover:scale-105"
+        >
+          Ask an Expert <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+    </section>
+    <hr class="dark:text-forest-900" />
+
+    <footer class="bg-forest-950 text-white pt-20 pb-10 px-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div class="md:col-span-1">
+            <div class="flex items-center gap-2 mb-6">
+              <i class="fa-solid fa-location-dot text-forest-500 text-xl"></i>
+              <span class="font-display font-bold text-2xl tracking-tight"
+                >Domner BaiTorng</span
+              >
+            </div>
+            <p class="text-forest-200/40 text-sm leading-relaxed">
+              Pioneering sustainable and luxurious travel since 2012. We believe
+              in journeys that leave only footprints.
+            </p>
+            <div class="flex gap-4 mt-6 text-forest-400">
+              <a href="#" class="hover:text-white transition"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="hover:text-white transition"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+              <a href="#" class="hover:text-white transition"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h4
+              class="text-[10px] font-bold uppercase tracking-[0.2em] text-forest-500 mb-6"
+            >
+              Navigation
+            </h4>
+            <ul class="space-y-3 text-sm text-forest-200/60">
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Search Destinations</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Last Minute Deals</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Our Story</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Travel Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-[10px] font-bold uppercase tracking-[0.2em] text-forest-500 mb-6"
+            >
+              Support
+            </h4>
+            <ul class="space-y-3 text-sm text-forest-200/60">
+              <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Visa Information</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Insurance</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-[10px] font-bold uppercase tracking-[0.2em] text-forest-500 mb-6"
+            >
+              Newsletter
+            </h4>
+            <p class="text-xs text-forest-200/50 mb-4">
+              Get curated travel guides in your inbox.
+            </p>
+            <div class="relative">
+              <input
+                type="email"
+                placeholder="Email address"
+                class="w-full bg-forest-900 border border-forest-800 rounded-full py-3 px-5 text-sm focus:outline-none focus:border-forest-500 transition-colors"
+              />
+              <button
+                class="absolute right-2 top-1.5 bg-forest-600 p-1.5 w-8 h-8 rounded-full hover:bg-forest-500 transition"
+              >
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-8 border-t border-forest-900 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-[10px] text-forest-200/30 uppercase tracking-widest">
+            © 2026 Domner BaiTorng. Built for Discovery.
+          </p>
+          <div
+            class="flex gap-6 text-[10px] text-forest-200/30 uppercase tracking-widest font-bold"
+          >
+            <a href="#" class="hover:text-white transition">Privacy</a>
+            <a href="#" class="hover:text-white transition">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/d9a2442d2e.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

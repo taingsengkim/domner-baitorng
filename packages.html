@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Packages – Domner BaiTorng</title>
+    <link rel="stylesheet" href="src/output.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-white text-gray-800 font-body dark:bg-forest-950 dark:text-forest-100"
+  >
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-forest-950/90 backdrop-blur-md border-b border-green-100 dark:border-forest-800 shadow-sm"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center gap-2">
+            <div
+              class="w-8 h-8 bg-forest-700 rounded-full flex items-center justify-center"
+            >
+              <i class="fas fa-location-dot text-white text-xs"></i>
+            </div>
+            <span
+              class="font-display text-[1.2rem] sm:text-[1.35rem] font-bold text-forest-800 dark:text-forest-50 tracking-tight"
+            >
+              Domner BaiTorng
+            </span>
+          </a>
+
+          <div class="hidden md:flex items-center gap-6 lg:gap-8">
+            <a
+              href="index.html"
+              class="relative text-sm font-medium text-gray-600 dark:text-forest-300 hover:text-forest-700 dark:hover:text-white transition-all"
+              >Home</a
+            >
+            <a
+              href="destinations.html"
+              class="relative text-sm font-medium text-gray-600 dark:text-forest-300 hover:text-forest-700 dark:hover:text-white transition-all"
+              >Destinations</a
+            >
+            <a
+              href="packages.html"
+              class="relative text-sm font-medium text-forest-700 dark:text-green-400 after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[2px] after:bg-forest-600"
+              >Packages</a
+            >
+            <a
+              href="about.html"
+              class="relative text-sm font-medium text-gray-600 dark:text-forest-300 hover:text-forest-700 dark:hover:text-white transition-all"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="relative text-sm font-medium text-gray-600 dark:text-forest-300 hover:text-forest-700 dark:hover:text-white transition-all"
+              >Contact</a
+            >
+            <a
+              href="packages.html"
+              class="bg-forest-600 text-white text-sm font-medium px-5 py-2 rounded-full shadow transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(22,163,74,0.4)]"
+              >Book Now</a
+            >
+          </div>
+
+          <label
+            for="menu-toggle"
+            class="md:hidden flex flex-col gap-1.5 cursor-pointer p-2 group"
+          >
+            <input type="checkbox" id="menu-toggle" class="hidden peer" />
+            <div
+              class="w-6 h-0.5 bg-forest-700 dark:bg-forest-300 transition-all peer-checked:rotate-45 peer-checked:translate-y-2"
+            ></div>
+            <div
+              class="w-6 h-0.5 bg-forest-700 dark:bg-forest-300 transition-all peer-checked:opacity-0"
+            ></div>
+            <div
+              class="w-6 h-0.5 bg-forest-700 dark:bg-forest-300 transition-all peer-checked:-rotate-45 peer-checked:-translate-y-2"
+            ></div>
+
+            <div
+              class="absolute top-16 left-0 right-0 hidden peer-checked:block bg-white dark:bg-forest-900 border-b border-green-100 dark:border-forest-800 shadow-xl animate-in slide-in-from-top duration-300"
+            >
+              <div class="flex flex-col p-4 gap-2">
+                <a
+                  href="index.html"
+                  class="px-4 py-3 text-forest-700 dark:text-green-400 font-semibold bg-forest-50 dark:bg-forest-800 rounded-xl"
+                  >Home</a
+                >
+                <a
+                  href="destinations.html"
+                  class="px-4 py-3 text-gray-600 dark:text-forest-300 hover:bg-gray-50 dark:hover:bg-forest-800 rounded-xl"
+                  >Destinations</a
+                >
+                <a
+                  href="packages.html"
+                  class="px-4 py-3 text-gray-600 dark:text-forest-300 hover:bg-gray-50 dark:hover:bg-forest-800 rounded-xl"
+                  >Packages</a
+                >
+                <a
+                  href="about.html"
+                  class="px-4 py-3 text-gray-600 dark:text-forest-300 hover:bg-gray-50 dark:hover:bg-forest-800 rounded-xl"
+                  >About</a
+                >
+                <a
+                  href="contact.html"
+                  class="px-4 py-3 text-gray-600 dark:text-forest-300 hover:bg-gray-50 dark:hover:bg-forest-800 rounded-xl"
+                  >Contact</a
+                >
+                <hr class="my-2 border-gray-100 dark:border-forest-800" />
+                <a
+                  href="packages.html"
+                  class="w-full bg-forest-600 text-white text-center font-bold py-4 rounded-2xl shadow-lg"
+                  >Book Your Trip</a
+                >
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="relative flex pb-14 pt-28 px-4 bg-[url('https://www.cambodiaacountryfullofcharm.com/wp-content/uploads/2022/11/musee-national-phnom-penh-cambodge-scaled-e1669642865121.jpg')] bg-cover bg-center"
+    >
+      <div class="absolute inset-0 bg-forest-950/60"></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto w-full">
+        <p class="text-green-300 text-xs uppercase font-semibold mb-2">
+          All-inclusive journeys
+        </p>
+
+        <h1 class="text-5xl md:text-7xl text-white font-display font-bold">
+          Travel Packages
+        </h1>
+      </div>
+    </section>
+
+    <section class="py-20 px-4 bg-white dark:bg-forest-950">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex items-end justify-between mb-12">
+          <div>
+            <p
+              class="text-forest-600 text-xs tracking-widest uppercase font-semibold mb-2"
+            >
+              Editor's picks
+            </p>
+            <h2
+              class="text-4xl md:text-5xl text-forest-900 dark:text-white font-display font-bold"
+            >
+              Popular Packages
+            </h2>
+          </div>
+          <a
+            href="#all-packages"
+            class="text-sm text-forest-600 font-medium hover:underline hidden md:block"
+          >
+            See all <i class="fa-solid fa-arrow-down ml-1"></i>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+          <div
+            class="group relative rounded-3xl overflow-hidden shadow-lg h-96 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-200/50 dark:hover:shadow-green-800"
+          >
+            <img
+              src="img/1-scaled-1.jpg"
+              alt="Angkor Wat"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+            ></div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="bg-yellow-400 text-yellow-900 text-[10px] uppercase tracking-tighter font-black px-3 py-1 rounded-full"
+              >
+                <i class="fa-solid fa-fire mr-1"></i> Cultural Icon
+              </span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+              <div class="flex items-center gap-2 text-xs text-white/70 mb-2">
+                <i class="fa-solid fa-location-dot"></i> Siem Reap, Cambodia
+              </div>
+              <h3 class="text-3xl font-display font-bold mb-3">
+                Angkor Heritage Discovery
+              </h3>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-green-300 text-xs mb-1">
+                    Private Guide · 4 nights
+                  </p>
+                  <p class="text-2xl font-bold">
+                    $450
+                    <span class="text-sm font-normal text-white/60"
+                      >/ person</span
+                    >
+                  </p>
+                </div>
+                <button
+                  class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-6 py-3 rounded-full transition-all"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-8">
+            <div
+              class="group relative rounded-3xl overflow-hidden shadow-lg h-44 transition-all duration-500 hover:-translate-y-1"
+            >
+              <img
+                src="img/6-3-15The-paradise-island-Koh-Rong-Island.jpg"
+                alt="Koh Rong"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"
+              ></div>
+              <div
+                class="absolute inset-0 p-6 flex flex-col justify-between text-white"
+              >
+                <span class="text-xs text-white/70 flex items-center gap-2">
+                  <i class="fa-solid fa-location-dot"></i> Koh Rong Island,
+                  Cambodia
+                </span>
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="text-2xl font-display font-bold">
+                      Island Paradise
+                    </h3>
+                    <p class="text-green-300 text-xs">
+                      3 nights · Luxury Resort
+                    </p>
+                  </div>
+                  <p class="text-2xl font-bold">$320</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group relative rounded-3xl overflow-hidden shadow-lg h-44 transition-all duration-500 hover:-translate-y-1"
+            >
+              <img
+                src="img/5-Day-Kratie-Mondulkiri-Explorer-Tour-Mondulkiri-9.jpg"
+                alt="Mondulkiri"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"
+              ></div>
+              <div
+                class="absolute inset-0 p-6 flex flex-col justify-between text-white"
+              >
+                <span class="text-xs text-white/70 flex items-center gap-2">
+                  <i class="fa-solid fa-location-dot"></i> Mondulkiri, Cambodia
+                </span>
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="text-2xl font-display font-bold">
+                      Wild Highland Trail
+                    </h3>
+                    <p class="text-green-300 text-xs">Eco-lodge · 2 nights</p>
+                  </div>
+                  <p class="text-2xl font-bold">$195</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="all-packages"
+      class="py-20 px-4 bg-forest-50 dark:bg-forest-900"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <p
+            class="text-forest-600 text-xs tracking-widest uppercase font-semibold mb-2"
+          >
+            Something for everyone
+          </p>
+          <h2
+            class="text-4xl md:text-5xl text-forest-900 dark:text-forest-500 font-display font-bold"
+          >
+            All Packages
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="dark:bg-forest-950 dark:border-green-900 bg-white rounded-3xl overflow-hidden shadow-md border border-green-50 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl group"
+          >
+            <div class="relative h-56 overflow-hidden">
+              <img
+                src="img/Sothys-Pepper-Farm-3.png"
+                alt="Kampot Riverside"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <span
+                class="absolute top-4 left-4 bg-forest-100/90 backdrop-blur text-forest-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest"
+                >Heritage</span
+              >
+            </div>
+            <div class="p-8">
+              <div class="flex justify-between items-start mb-4">
+                <h3
+                  class="dark:text-forest-200 text-2xl font-display font-bold text-forest-900 dark:text-forest-200"
+                >
+                  Riverside Charm
+                </h3>
+                <span
+                  class="text-xs dark:text-forest-100 text-gray-400 font-medium"
+                  >3 nights</span
+                >
+              </div>
+              <p
+                class="dark:text-white text-gray-500 text-sm leading-relaxed mb-6"
+              >
+                Explore Kampot's pepper plantations, salt fields, and the famous
+                Kep crab market with a sunset river cruise.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li
+                  class="flex items-center gap-3 text-xs dark:text-forest-200 text-gray-600"
+                >
+                  <i class="fa-solid fa-circle-check text-forest-500"></i>
+                  Pepper Farm Tasting
+                </li>
+                <li
+                  class="flex items-center gap-3 text-xs dark:text-forest-200 text-gray-600"
+                >
+                  <i class="fa-solid fa-circle-check text-forest-500"></i>
+                  Colonial Villa Stay
+                </li>
+                <li
+                  class="flex items-center gap-3 text-xs dark:text-forest-200 text-gray-600"
+                >
+                  <i class="fa-solid fa-circle-check text-forest-500"></i> Kayak
+                  the Green Cathedral
+                </li>
+              </ul>
+              <div
+                class="flex items-center justify-between pt-6 border-t border-gray-100"
+              >
+                <div>
+                  <p
+                    class="text-[10px] uppercase text-gray-400 dark:text-white font-bold tracking-widest"
+                  >
+                    From
+                  </p>
+                  <p
+                    class="text-2xl font-bold text-forest-800 dark:text-forest-200"
+                  >
+                    $245
+                  </p>
+                </div>
+                <button
+                  class="bg-forest-600 text-white text-xs font-bold px-5 py-3 rounded-full hover:bg-forest-700 transition-colors"
+                >
+                  BOOK TRIP
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="dark:bg-forest-950 dark:border-green-900 bg-white rounded-3xl overflow-hidden shadow-md border border-green-50 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl group"
+          >
+            <div class="relative h-56 overflow-hidden">
+              <img
+                src="img/Royal-Palace-Phnom-Penh-scaled.webp"
+                alt="Royal Palace Phnom Penh"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <span
+                class="absolute top-4 left-4 bg-forest-100/90 backdrop-blur text-forest-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest"
+                >Urban</span
+              >
+            </div>
+            <div class="p-8">
+              <div class="flex justify-between items-start mb-4">
+                <h3
+                  class="dark:text-forest-200 text-2xl font-display font-bold text-forest-900"
+                >
+                  Capital Soul
+                </h3>
+                <span
+                  class="text-xs dark:text-forest-100 text-gray-400 font-medium"
+                  >2 nights</span
+                >
+              </div>
+              <p
+                class="dark:text-white text-gray-500 text-sm leading-relaxed mb-6"
+              >
+                Discover the Royal Palace, vibrant night markets, and the Mekong
+                riverfront alongside Cambodia's complex history.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li
+                  class="flex items-center gap-3 text-xs dark:text-forest-200 text-gray-600"
+                >
+                  <i class="fa-solid fa-circle-check text-forest-500"></i>
+                  Palace Entry Included
+                </li>
+                <li
+                  class="flex items-center gap-3 text-xs dark:text-forest-200 text-gray-600"
+                >
+                  <i class="fa-solid fa-circle-check text-forest-500"></i>
+                  4-Star Riverside Hotel
+                </li>
+                <li
+                  class="flex items-center gap-3 text-xs dark:text-forest-200 text-gray-600"
+                >
+                  <i class="fa-solid fa-circle-check text-forest-500"></i>
+                  Mekong Sunset Cruise
+                </li>
+              </ul>
+              <div
+                class="flex items-center justify-between pt-6 border-t border-gray-100"
+              >
+                <div>
+                  <p
+                    class="text-[10px] uppercase text-gray-400 dark:text-white font-bold tracking-widest"
+                  >
+                    From
+                  </p>
+                  <p
+                    class="text-2xl font-bold text-forest-800 dark:text-forest-200"
+                  >
+                    $190
+                  </p>
+                </div>
+                <button
+                  class="bg-forest-600 text-white text-xs font-bold px-5 py-3 rounded-full hover:bg-forest-700 transition-colors"
+                >
+                  BOOK TRIP
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="dark:bg-forest-950 dark:border-green-900 bg-white rounded-3xl overflow-hidden shadow-md border border-green-50 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl group"
+          >
+            <div class="relative h-56 overflow-hidden">
+              <img
+                src="img/850x450-bambutrain.jpg"
+                alt="Battambang Bamboo Train"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <span
+                class="absolute top-4 left-4 bg-forest-100/90 backdrop-blur text-forest-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest"
+                >Art & Adventure</span
+              >
+            </div>
+            <div class="p-8">
+              <div class="flex justify-between items-start mb-4">
+                <h3
+                  class="dark:text-forest-200 text-2xl font-display font-bold text-forest-900 dark:text-forest-200"
+                >
+                  The Artistic Hub
+                </h3>
+                <span
+                  class="text-xs dark:text-forest-100 text-gray-400 font-medium"
+                  >3 nights</span
+                >
+              </div>
+              <p
+                class="dark:text-white text-gray-500 text-sm leading-relaxed mb-6"
+              >
+                Ride the unique Bamboo Train, witness the sunset bat migration,
+                and explore Cambodia's premier arts scene.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li
+                  class="flex items-center gap-3 text-xs dark:text-forest-200 text-gray-600"
+                >
+                  <i class="fa-solid fa-circle-check text-forest-500"></i>
+                  Bamboo Train Ride
+                </li>
+                <li
+                  class="flex items-center gap-3 text-xs dark:text-forest-200 text-gray-600"
+                >
+                  <i class="fa-solid fa-circle-check text-forest-500"></i>
+                  Boutique Art Resort
+                </li>
+                <li
+                  class="flex items-center gap-3 text-xs dark:text-forest-200 text-gray-600"
+                >
+                  <i class="fa-solid fa-circle-check text-forest-500"></i> Phare
+                  Circus Tickets
+                </li>
+              </ul>
+              <div
+                class="flex items-center justify-between pt-6 border-t border-gray-100"
+              >
+                <div>
+                  <p
+                    class="text-[10px] uppercase text-gray-400 dark:text-white font-bold tracking-widest"
+                  >
+                    From
+                  </p>
+                  <p
+                    class="text-2xl font-bold text-forest-800 dark:text-forest-200"
+                  >
+                    $215
+                  </p>
+                </div>
+                <button
+                  class="bg-forest-600 text-white text-xs font-bold px-5 py-3 rounded-full hover:bg-forest-700 transition-colors"
+                >
+                  BOOK TRIP
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-forest-900 py-24 px-4 text-center text-white relative overflow-hidden"
+    >
+      <div class="absolute top-0 left-0 opacity-10 pointer-events-none">
+        <i
+          class="fa-solid fa-earth-americas text-[20rem] -translate-x-1/2 -translate-y-1/4"
+        ></i>
+      </div>
+      <h2
+        class="text-4xl md:text-6xl font-display font-bold mb-6 relative z-10"
+      >
+        Want a Custom Package?
+      </h2>
+      <p class="text-white/70 text-lg max-w-xl mx-auto mb-10 relative z-10">
+        Tell us your dream, dates, and budget — we'll design an itinerary just
+        for you.
+      </p>
+      <a
+        href="#"
+        class="inline-block bg-white text-forest-900 font-bold px-12 py-5 rounded-full shadow-2xl hover:scale-105 transition-transform relative z-10"
+      >
+        <i class="fa-solid fa-wand-magic-sparkles mr-2"></i> Request Custom Trip
+      </a>
+    </section>
+
+    <footer class="bg-forest-950 text-white pt-20 pb-10 px-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div class="md:col-span-1">
+            <div class="flex items-center gap-2 mb-6">
+              <i class="fa-solid fa-location-dot text-forest-500 text-xl"></i>
+              <span class="font-display font-bold text-2xl tracking-tight"
+                >Domner BaiTorng</span
+              >
+            </div>
+            <p class="text-forest-200/40 text-sm leading-relaxed">
+              Pioneering sustainable and luxurious travel since 2012. We believe
+              in journeys that leave only footprints.
+            </p>
+            <div class="flex gap-4 mt-6 text-forest-400">
+              <a href="#" class="hover:text-white transition"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="hover:text-white transition"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+              <a href="#" class="hover:text-white transition"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h4
+              class="text-[10px] font-bold uppercase tracking-[0.2em] text-forest-500 mb-6"
+            >
+              Navigation
+            </h4>
+            <ul class="space-y-3 text-sm text-forest-200/60">
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Search Destinations</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Last Minute Deals</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Our Story</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Travel Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-[10px] font-bold uppercase tracking-[0.2em] text-forest-500 mb-6"
+            >
+              Support
+            </h4>
+            <ul class="space-y-3 text-sm text-forest-200/60">
+              <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Visa Information</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Insurance</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-[10px] font-bold uppercase tracking-[0.2em] text-forest-500 mb-6"
+            >
+              Newsletter
+            </h4>
+            <p class="text-xs text-forest-200/50 mb-4">
+              Get curated travel guides in your inbox.
+            </p>
+            <div class="relative">
+              <input
+                type="email"
+                placeholder="Email address"
+                class="w-full bg-forest-900 border border-forest-800 rounded-full py-3 px-5 text-sm focus:outline-none focus:border-forest-500 transition-colors"
+              />
+              <button
+                class="absolute right-2 top-1.5 bg-forest-600 p-1.5 w-8 h-8 rounded-full hover:bg-forest-500 transition"
+              >
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-8 border-t border-forest-900 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-[10px] text-forest-200/30 uppercase tracking-widest">
+            © 2026 Domner BaiTorng. Built for Discovery.
+          </p>
+          <div
+            class="flex gap-6 text-[10px] text-forest-200/30 uppercase tracking-widest font-bold"
+          >
+            <a href="#" class="hover:text-white transition">Privacy</a>
+            <a href="#" class="hover:text-white transition">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/d9a2442d2e.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
